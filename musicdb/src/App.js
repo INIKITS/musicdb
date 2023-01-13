@@ -1,12 +1,15 @@
-import { Switch, Route, Link } from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Header, Footer} from "./components";
+import "./index.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <p>hello</p>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+      </div>
+      <Footer className="App-footer" />
+    </Router>
   );
 }
 
